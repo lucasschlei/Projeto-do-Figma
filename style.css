@@ -1,0 +1,615 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header - Exatamente como na imagem */
+  .header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .nav-brand h1 {
+    color: #4285f4;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s;
+  }
+  
+  .nav-menu a:hover {
+    color: #4285f4;
+  }
+  
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .login-btn {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 16px;
+    transition: color 0.2s;
+  }
+  
+  .login-btn:hover {
+    color: #4285f4;
+  }
+  
+  .start-btn {
+    background: #4285f4;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .start-btn:hover {
+    background: #3367d6;
+    transform: translateY(-1px);
+  }
+  
+  /* Hero Section - Cores e layout exatos */
+  .hero {
+    background: #ffffff;
+    padding: 100px 0 0;
+    text-align: center;
+    min-height: 90vh;
+  }
+  
+  .hero-content {
+    max-width: 900px;
+    margin: 0 auto 80px;
+    padding: 0 40px;
+  }
+  
+  .hero-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    letter-spacing: -2px;
+  }
+  
+  .hero-subtitle {
+    font-size: 20px;
+    color: #806b71;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  
+  .hero-phones {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  .hero-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  /* Dream Job Section - Fundo e espaçamento corretos */
+  .dream-job {
+    padding: 120px 0;
+    background: #ffffff;
+    text-align: center;
+  }
+  
+  .dream-job h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 80px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+    letter-spacing: -1px;
+  }
+  
+  .phones-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+  }
+  
+  .dream-job-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  /* Why Choose Section - Fundo cinza claro como na imagem */
+  .why-choose {
+    padding: 120px 0;
+    background: #f9fafb;
+  }
+  
+  .why-choose-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  .why-choose-phone {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .why-choose-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .why-choose-text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+  }
+  
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .faq-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1a1a1a;
+    transition: background-color 0.2s;
+  }
+  
+  .faq-question:hover {
+    background-color: #f9fafb;
+  }
+  
+  .faq-toggle {
+    font-size: 20px;
+    color: #6b7280;
+    font-weight: 300;
+    transition: transform 0.2s;
+  }
+  
+  .faq-answer {
+    padding: 0 24px 24px;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+    display: none;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  .faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+    color: #4285f4;
+  }
+  
+  /* Help Section - Layout exato da imagem */
+  .help-section {
+    background: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%);
+    padding: 80px 0 0;
+    color: white;
+    border-radius: 40px 40px 0 0;
+    margin-top: 80px;
+  }
+  
+  .help-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  
+  .help-text h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 0;
+  }
+  
+  .help-cta {
+    text-align: left;
+  }
+  
+  .help-cta p {
+    font-size: 18px;
+    opacity: 0.9;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 400px;
+  }
+  
+  .learn-more-btn {
+    background: white;
+    color: #1a1a1a;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 32px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s;
+  }
+  
+  .learn-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Linha divisória */
+  .help-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 40px;
+  }
+  
+  /* Footer - Continuação da seção azul */
+  .footer {
+    background: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%);
+    color: white;
+    padding: 80px 0 40px;
+    margin-top: 0;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+  }
+  
+  .footer-brand h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .footer-brand p {
+    opacity: 0.8;
+    line-height: 1.6;
+    font-size: 16px;
+    max-width: 280px;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 16px;
+  }
+  
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    font-size: 16px;
+  }
+  
+  .footer-column ul li a:hover {
+    opacity: 1;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .footer-bottom p {
+    opacity: 0.8;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .footer-bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  
+  .footer-bottom-right p {
+    opacity: 0.8;
+    font-size: 14px;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .footer-bottom-right a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  
+  .footer-bottom-right a:hover {
+    opacity: 1;
+  }
+  
+  .footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .footer-legal a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    font-size: 14px;
+    transition: opacity 0.2s;
+  }
+  
+  .footer-legal a:hover {
+    opacity: 1;
+  }
+  
+  .footer-legal span {
+    opacity: 0.6;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .nav {
+      padding: 16px 20px;
+    }
+  
+    .hero-content,
+    .phones-grid,
+    .why-choose-content,
+    .help-content,
+    .footer-content,
+    .footer-bottom {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .hero-title {
+      font-size: 48px;
+    }
+  
+    .dream-job h2,
+    .help-content h2 {
+      font-size: 40px;
+    }
+  
+    .why-choose-content {
+      gap: 60px;
+    }
+  
+    .footer-content {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+    }
+  
+    .nav-actions {
+      justify-content: center;
+    }
+  
+    .hero {
+      padding: 80px 0 0;
+    }
+  
+    .hero-title {
+      font-size: 36px;
+      letter-spacing: -1px;
+    }
+  
+    .hero-subtitle {
+      font-size: 18px;
+    }
+  
+    .dream-job h2 {
+      font-size: 32px;
+    }
+  
+    .why-choose-content {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 40px;
+    }
+  
+    .why-choose-text h2 {
+      font-size: 32px;
+    }
+  
+    .help-content h2 {
+      font-size: 32px;
+    }
+  
+    .help-content p {
+      font-size: 18px;
+    }
+  
+    .footer-content {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 40px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .footer-bottom-links {
+      text-align: center;
+    }
+  
+    .footer-legal {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 28px;
+    }
+  
+    .hero-subtitle {
+      font-size: 16px;
+    }
+  
+    .dream-job h2 {
+      font-size: 24px;
+    }
+  
+    .why-choose-text h2 {
+      font-size: 24px;
+    }
+  
+    .help-content h2 {
+      font-size: 24px;
+    }
+  
+    .help-content p {
+      font-size: 16px;
+    }
+  
+    .faq-question {
+      padding: 20px;
+      font-size: 15px;
+    }
+  
+    .faq-answer {
+      padding: 0 20px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
